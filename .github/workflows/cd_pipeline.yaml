@@ -20,7 +20,8 @@ on:
 # What to do
 # Action/workflow/job
 jobs:
-  run_pandas_job: ubuntu-latest
+  run_job: 
+    runs-on: ubuntu-latest
   steps:
     - name: Checkout Code
       # owner/repo@version
