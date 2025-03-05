@@ -22,18 +22,18 @@ on:
 jobs:
   run_job: 
     runs-on: ubuntu-latest
-  steps:
-    - name: Checkout Code
-      # owner/repo@version
-      uses: actions/checkout@v2
+    steps:
+      - name: Checkout Code
+        # owner/repo@version
+        uses: actions/checkout@v2
 
-    - name: Setup Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
-    
-    - name: Install Dependencies
-      run: pip install pandas
-    
-    - name: Run Pandas Job
-      run: python app.py
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      
+      - name: Install Dependencies
+        run: pip install pandas
+      
+      - name: Run Pandas Job
+        run: python app.py
