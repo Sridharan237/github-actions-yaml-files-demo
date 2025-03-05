@@ -35,5 +35,5 @@ jobs:
       - name: Install Dependencies
         run: pip install pandas
       
-      - name: Run Pandas Job
+      - name: Run Current Job
         run: python app.py
